@@ -66,7 +66,7 @@ void solve() {
 
      int i,
          j,
-         k, min, posMin;  
+         min, posMin = -1;  
 
      int start;
 
@@ -115,7 +115,7 @@ void solve() {
 
      freopen(FOUT, "w", stdout);      
 
-     printf("%d\n%d\n", cost, num_nodes-1);
+     printf("%ld\n%d\n", cost, num_nodes-1);
 
              for(j = 1; j <= num_nodes; j++){
 
