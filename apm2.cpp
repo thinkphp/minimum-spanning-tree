@@ -24,15 +24,7 @@ struct Edge {
  
 } V[ MAXE ];
  
-struct Sol {
- 
-       int x;
-       int y;
-       int c;
- 
-} S[ MAXE ];
-
-vector<pair <int, int> > Sol2;
+vector<pair <int, int> > Sol;
  
 int num_nodes, 
     num_edges;
@@ -113,7 +105,7 @@ void kruskal() {
  
         if(find(X) == find(Y)) continue;
  
-        Sol2.push_back( make_pair(X, Y) );
+        Sol.push_back( make_pair(X, Y) );
  
         sumCost += Cost;
   
@@ -122,7 +114,7 @@ void kruskal() {
  
     printf("%d\n%d\n", sumCost, num_nodes-1);
  
-    for(vector<pair <int,int> >::iterator i = Sol2.begin(); i != Sol2.end() ;++i) {
+    for(vector<pair <int,int> >::iterator i = Sol.begin(); i != Sol.end() ;++i) {
 
         printf("%d %d\n", i->x, i->y); 
     }
