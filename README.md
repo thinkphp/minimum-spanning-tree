@@ -23,6 +23,7 @@
 ### Problem Set
 
 https://www.infoarena.ro/problema/apm
+https://leetcode.com/tag/minimum-spanning-tree/
 
 ## References
 
